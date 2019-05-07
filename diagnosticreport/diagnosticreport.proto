@@ -32,7 +32,7 @@ message DiagnosticReport {
   repeated FileLength fileLengths = 7;
   string wanInfo = 8;
   repeated CommandOutput commandOutputs = 9;
-  string infoJSON = 10;
+  string infoJSON = 16;
   int32 unknown1 = 11;
   repeated UnknownPair unknownPairs = 12;
   int32 unixTime = 13;

@@ -58,7 +58,7 @@ func (dr DiagnosticReport) MarshalJSON() ([]byte, error) {
 		FileLengths      []*FileLength    `json:"fileLengths,omitempty"`
 		WanInfo          string           `json:"wanInfo,omitempty"`
 		CommandOutputs   []*CommandOutput `json:"commandOutputs,omitempty"`
-		InfoJSON         json.RawMessage  `json:"infoJSON,omitempty"`
+		InfoJSON         string           `json:"infoJSON,omitempty"`
 		Unknown1         int32            `json:"unknown1,omitempty"`
 		UnknownPairs     []*UnknownPair   `json:"unknownPairs,omitempty"`
 		UnixTime         int32            `json:"unixTime,omitempty"`
@@ -71,7 +71,7 @@ func (dr DiagnosticReport) MarshalJSON() ([]byte, error) {
 		FileLengths:      dr.FileLengths,
 		WanInfo:          dr.WanInfo,
 		CommandOutputs:   dr.CommandOutputs,
-		InfoJSON:         json.RawMessage(dr.InfoJSON),
+		InfoJSON:         dr.InfoJSON,
 		Unknown1:         dr.Unknown1,
 		UnknownPairs:     dr.UnknownPairs,
 		UnixTime:         dr.UnixTime,
