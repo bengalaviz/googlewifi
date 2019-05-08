@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"flag"
-	"../../diagnosticreport"
+	"github.com/bengalaviz/googlewifi/diagnosticreport"
 	"io"
 	"io/ioutil"
 	"log"
